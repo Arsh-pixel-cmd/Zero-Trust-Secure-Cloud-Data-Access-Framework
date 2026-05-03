@@ -47,6 +47,23 @@ const DashboardView = ({ user, token, riskScore }) => {
       </div>
 
       {/* Data Decryption Layers */}
+      <div className="bg-[#111111] border border-blue-500/30 p-6 rounded-2xl shadow-lg relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+        <h3 className="text-lg font-semibold text-white mb-2 flex items-center gap-2">
+          <Sparkles className="text-blue-400" size={20} /> Zero Trust Engine Test Guide
+        </h3>
+        <p className="text-slate-400 text-sm mb-4 leading-relaxed">
+          You have successfully established implicit trust. Now, let's see how the Zero Trust Policy Engine works in real-time. Follow these steps:
+        </p>
+        <ol className="list-decimal list-inside space-y-2 text-sm text-slate-300 font-medium ml-2">
+          <li>Locate the <strong>Risk Engine Panel</strong> on the right side of your screen.</li>
+          <li>Toggle on <strong>"Blacklisted IP Address"</strong> and <strong>"Impossible Travel"</strong>.</li>
+          <li>Notice how your <strong>Risk Score</strong> immediately increases, but you maintain access.</li>
+          <li>Now, toggle on <strong>"Unregistered Hardware ID"</strong> to push your Risk Index past the <span className="text-red-400">0.70 threshold</span>.</li>
+          <li><strong>Watch carefully:</strong> The engine will instantly revoke your session, invalidate your JWT token in the Redis cache, and kick you out!</li>
+        </ol>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-[#111111] border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition shadow-sm">
           <div className="flex items-center justify-between mb-4">

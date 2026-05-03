@@ -1,7 +1,7 @@
 
 import { ChevronRight, Shield, Zap, Lock } from 'lucide-react';
 
-const LandingView = ({ setView }) => {
+const LandingView = ({ setView, user }) => {
   return (
     <div className="relative py-16 lg:py-24 animate-in slide-in-from-bottom duration-700 text-left">
       <div className="relative z-10 max-w-4xl">
@@ -20,13 +20,21 @@ const LandingView = ({ setView }) => {
         </p>
         
         <div className="flex flex-wrap items-center gap-4 justify-start mb-20">
-          <button onClick={() => setView('register')} className="px-6 py-3 bg-white text-black hover:bg-slate-200 rounded-lg font-semibold text-sm transition-colors flex items-center gap-2 shadow-sm">
-            Get Started <ChevronRight size={16} />
-          </button>
-          
-          <button onClick={() => setView('login')} className="px-6 py-3 bg-transparent border border-slate-700 hover:border-slate-500 rounded-lg font-medium text-sm transition-colors text-white">
-            Access Portal
-          </button>
+          {user ? (
+            <button onClick={() => setView('dashboard')} className="px-6 py-3 bg-white text-black hover:bg-slate-200 rounded-lg font-semibold text-sm transition-colors flex items-center gap-2 shadow-sm">
+              Return to Dashboard <ChevronRight size={16} />
+            </button>
+          ) : (
+            <>
+              <button onClick={() => setView('register')} className="px-6 py-3 bg-white text-black hover:bg-slate-200 rounded-lg font-semibold text-sm transition-colors flex items-center gap-2 shadow-sm">
+                Get Started <ChevronRight size={16} />
+              </button>
+              
+              <button onClick={() => setView('login')} className="px-6 py-3 bg-transparent border border-slate-700 hover:border-slate-500 rounded-lg font-medium text-sm transition-colors text-white">
+                Access Portal
+              </button>
+            </>
+          )}
         </div>
 
         {/* Feature Highlights Grid */}

@@ -235,7 +235,7 @@ const App = () => {
             />
           )}
 
-          {view === 'landing' && <LandingView setView={setView} />}
+          {view === 'landing' && <LandingView setView={setView} user={user} />}
           {(view === 'login' || view === 'register') && (
             <LoginView view={view} setView={setView} onSubmit={handleAuthSubmit} loading={loading} />
           )}
