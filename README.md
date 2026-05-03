@@ -94,5 +94,5 @@ The project includes a built-in **Risk Engine Panel** for live demonstration:
 - **SIEM Integration**: Exporting logs to ELK Stack or Splunk for advanced forensics.
 
 ---
-**Developed by:** Arsh Mishra , Piyush Vatsh
+**Developed by:** Arsh Mishra, Piyush vatsh, Aniket sharma, Puneet kumar, Dev Kaushik
 **Academic Year:** 2024-2028
