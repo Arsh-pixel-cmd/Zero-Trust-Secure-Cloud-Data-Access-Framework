@@ -30,3 +30,10 @@ PRESENTATION_SCRIPT.txt
 .env
 .env.local
 .env.*.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+backend/venv/
