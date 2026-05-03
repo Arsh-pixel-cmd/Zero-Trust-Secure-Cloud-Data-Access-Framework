@@ -26,3 +26,7 @@ dist-ssr
 TEST_PLAN.txt
 
 PRESENTATION_SCRIPT.txt
+
+.env
+.env.local
+.env.*.local
