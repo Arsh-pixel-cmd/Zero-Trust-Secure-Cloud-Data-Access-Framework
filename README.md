@@ -57,8 +57,8 @@ This project was built to demonstrate the practical application of the Zero Trus
 1. **Clone the Repository**:
 
    ```bash
-   git clone <repository-url>
-   cd arsh-project
+   git clone https://github.com/Arsh-pixel-cmd/Zero-Trust-Secure-Cloud-Data-Access-Framework
+   cd Zero-Trust-Secure-Cloud-Data-Access-Framework
    ```
 
 2. **Configure Environment Variables**:
